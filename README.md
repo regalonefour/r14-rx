@@ -5,6 +5,12 @@ This resource IS NOT drag and drop, it requires to edits to your qb-core and qb-
 are not familiar with lua, please consult a dev before making any changes to your server, and as always make a BACKUP of EVERY
 file you are editing so that you can revert to a working version if needed.
 
+This resource creates a job-locked prescription pad item that EMS workers can use to create prescriptions with, these items can be
+carried in a user inventory and display the information to anyone who views the item. An EMS worker can use the item to tick off a
+refill and then return the item to the patient. When all refills are ticked off, the item is no longer usable, but is not deleted.
+
+----------- install guide --------------
+
 1) You will need to add the following code to your qb-core/shared/items.lua, this will allow them the prescription pad and  
 prescription item to be used as items by your inventory script. Add the following lines of code somewhere in the QBShared.Items
 lua.

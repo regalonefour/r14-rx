@@ -39,7 +39,7 @@ code.
                 "</span></p><p><strong>Pages Torn Out: </strong><span>" +
                 itemData.info.written +
                 "</span></p><p><strong>Pad Issued: </strong><span>" +
-                itemData.info.written +
+                itemData.info.dateissued +
                 "</p>"
             );
         } else if (itemData.name == "prescription") {

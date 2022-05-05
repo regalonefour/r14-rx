@@ -2,6 +2,7 @@ local QBCore = exports['qb-core']:GetCoreObject()
 local writingrx = false
 
 RegisterNetEvent('r14-rx:client:WriteRx', function()
+    if writingrx then return end        
     writingrx = true
 
     local rx = exports["qb-input"]:ShowInput({

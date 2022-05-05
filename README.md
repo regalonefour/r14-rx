@@ -25,9 +25,11 @@ lua.
 2) You will need to add the following code to your qb-inventory/html/js/app.js to your FormatItemInfo() function, this allows the
 items to have unique information displayed in the inventory system, and thus allow players to actually use the prescription items
 for their intended purpose. After you add the code below, drop the images in the base of this repo into your qb-inventory/html/images
-so they have images in your inventory.
+so they have images in your inventory. This code should also work with lj-inventory and tnj-inventory as it shares the same general 
+format for its app.js file. If you are not familiar with js like I am, just find a semicolon line, create a break, and insert this
+code.
 
-------------- code to be added to qb-inventry/html/js/app.js ----------------
+------------- code to be added to qb-inventry/html/js/app.js near line 407 ----------------
 
         } else if (itemData.name == "prescriptionpad") {
             $(".item-info-title").html("<p>" + itemData.label + "</p>");

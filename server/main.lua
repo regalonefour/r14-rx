@@ -54,11 +54,6 @@ QBCore.Functions.CreateUseableItem("prescriptionpad", function(source, item)
 		TriggerClientEvent('r14-rx:client:WriteRx', src, item.info)
 	else
 		TriggerClientEvent('QBCore:Notify', src,  'Your hand stops and you think to yourself; "Maybe I should put some effort into forging this signature instead of going to jail forever."', "error")
-		busy = true
-		CreateThread(function()
-			Wait(2000)
-			busy = false
-		end)
 	end
 end)
 
